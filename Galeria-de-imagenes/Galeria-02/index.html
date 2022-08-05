@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Galeria Responsive</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		body{
+			background: #000;
+		}
+
+		.contenedor{
+			height: 500px;
+			width: 100%;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			margin: 5px 0;
+
+		}
+
+		.galeria{
+			height: 400px;
+			width: 27%;
+			margin: 7px;
+			overflow: hidden;
+			box-shadow: 0 0 7px #fff;
+
+		}
+
+		.galeria img{
+			height: 100%;
+			width: 100%;
+			transition: 1s;
+		}
+		.galeria img:hover{
+			transform: scale(1.7);
+		}
+
+		@media screen and (max-width: 1300px){
+			.galeria{
+				width: 30%;
+			}
+		}
+
+			@media screen and (max-width: 1200px){
+			.galeria{
+				width: 35%;
+			}
+		}
+			@media screen and (max-width: 900px){
+			.galeria{
+				width: 40%;
+			}
+		}
+			@media screen and (max-width: 700px){
+			.galeria{
+				width: 50%;
+			}
+		}
+			@media screen and (max-width: 550px){
+			.galeria{
+				width: 60%;
+			}
+		}
+			@media screen and (max-width: 480px){
+			.galeria{
+				width: 100%;
+			}
+		}
+
+			@media screen and (max-width: 380px){
+			.galeria{
+				width: 100%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="contenedor">
+		<div class="galeria">
+			<img src="GALERIA1.jpg" alt="">
+		</div>
+		<div class="galeria">
+			<img src="GALERIA2.jpg" alt="">
+		</div>
+		<div class="galeria">
+			<img src="GALERIA3.jpg" alt="">
+		</div>
+		<div class="galeria">
+			<img src="GALERIA4.jpg" alt="">
+		</div>
+		<div class="galeria">
+			<img src="GALERIA5.jpg" alt="">
+		</div>
+		<div class="galeria">
+			<img src="GALERIA6.jpg" alt="">
+		</div>
+		<div class="galeria">
+			<img src="GALERIA7.jpg" alt="">
+		</div>
+	</div>
+</body>
+</html>
